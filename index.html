@@ -1,58 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>goldyer_ Links</title>
 
   <!-- Favicon & CSS -->
-  <link rel="shortcut icon"
-        href="loc.png"
-        type="image/x-icon" />
+  <link rel="shortcut icon" href="loc.png" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffbe6;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .contact-email {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 14px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 20px auto 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #8b4513;
+    }
+
+    .link-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #fff;
+      padding: 10px 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 10px;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s;
+    }
+
+    .link-card:hover {
+      transform: scale(1.05);
+    }
+
+    .link-card img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .info-links {
+      margin-top: 40px;
+      font-size: 15px;
+    }
+
+    .info-links a {
+      display: block;
+      margin: 6px 0;
+      color: #0055aa;
+      text-decoration: none;
+    }
+
+    .info-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <!-- Contact ở góc trên phải -->
+  <!-- Contact -->
   <div class="contact-email">
-    📧 Contact:
-    <a href="mailto:lehoangloc.contact@gmail.com">lehoangloc.contact@gmail.com</a>
+    📧 Contact: <a href="mailto:lehoangloc.contact@gmail.com">lehoangloc.contact@gmail.com</a>
   </div>
 
-  <!-- Avatar + tên -->
+  <!-- Avatar + Name -->
   <img src="https://cdn.discordapp.com/avatars/1278867909229285448/42f1219dc0f502f818a46399f6dcc65d.png"
        alt="goldyer avatar" class="avatar" />
   <h1>goldyer_</h1>
 
-  <!-- Discord (Server) -->
+  <!-- Links -->
   <a class="link-card" href="https://hlgoldyer.github.io/goldyer-links/dsc.html" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord icon" />
     <span class="link-title">Discord</span>
   </a>
 
-  <!-- Discord Bot -->
   <a class="link-card" href="https://hlgoldyer.github.io/goldyer-links/bot-dsc.html" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Bot icon" />
     <span class="link-title">Discord Bot</span>
   </a>
 
-  <!-- Facebook -->
   <a class="link-card" href="https://www.facebook.com/profile.php?id=61577663263544" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook icon" />
     <span class="link-title">Facebook</span>
   </a>
 
-  <!-- TikTok -->
   <a class="link-card" href="https://tiktok.com/@goldyerp" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok icon" />
     <span class="link-title">TikTok</span>
   </a>
 
-  <!-- Spotify -->
   <a class="link-card"
      href="https://open.spotify.com/user/31dsdprrqmy5rfhruacwwmqy4nk4?si=dd652e84c34f4574&nd=1&dlsi=69c44d6b34a54597"
      target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png" alt="Spotify icon" />
     <span class="link-title">Spotify</span>
   </a>
+
+  <!-- Info Links (ToS + Privacy) -->
+  <div class="info-links">
+    <a href="bot-tos.html" target="_blank">📜 Terms of Service (Bot)</a>
+    <a href="bot-privacy.html" target="_blank">🔒 Privacy Policy (Bot)</a>
+  </div>
 </body>
 </html>
